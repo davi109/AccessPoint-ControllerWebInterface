@@ -1,0 +1,335 @@
+.navbar-login {
+    width: 100%;
+    height: 110px;
+    background: #64ce76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px 0 35px; 
+}
+
+.navbar-login img {
+    width: 200px;
+    margin-top: 25px;
+}
+
+.login-content {
+    display: flex;
+    justify-content: center; 
+}
+
+.intro {
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.intro h2 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.login-box {
+    width: 550px;
+    max-height: 600px;
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.info-login {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info-login h3{
+    font-weight:400;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.form-box{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box input {
+    width: 100%;
+    min-width: 350px;
+    height: 60px;
+    margin-top: 20px;
+    padding-left: 35px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    transition: 0.3s;
+   
+}
+
+.form-box input:focus {
+    border-color: #64ce76;
+    box-shadow: 0 0 8px 0 #64ce76;
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  font-size: 25px;
+  left: 0;
+  top: 20px;
+  padding: 7px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input:focus + i{
+    color: #64ce76;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 59px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background: none;
+    border: 2px solid #aaa;
+    font-size: 25px;
+    color: #aaa;
+    border-radius: 8px;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.input-group button:hover {
+    border: 2px solid #64ce76;
+    color: #64ce76;
+    box-shadow: 0 2px 2px 0#64ce76;
+}
+
+
+.entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.entrar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: 0px;
+    color: #f5f5f5;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.entrar button:hover {
+    box-shadow: 0 2px 4px 1px #756f99;
+}
+
+.back {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding: 5px; 
+}
+
+.back-link {
+    font-size: 17px;
+    color:rgb(141, 141, 141);
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color:#2f1f8d;
+}
+
+
+
+@media (max-width: 900px) {
+    .navbar-login {
+        height: 80px !important;
+        padding: 0 15px 0 15px;
+    }
+
+    .navbar-login img {
+        width: 125px !important;
+    }
+
+    .intro {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .login-box {
+        width: 80%;
+        height: 520px;
+        padding: 15px;   
+        transform: translateX(13%);
+        margin-bottom: 50px;    
+    }
+    
+    .info-login {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    
+    .info-login h3{
+        font-weight:400;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+
+    .form-box form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .form-box input {
+        width: 100%;
+        min-width: 150px;
+        height: 50px;  
+    }
+    
+    
+    .inputWithIcon i {
+      top: 19px;
+    }
+    
+    
+    .input-group button {
+
+        width: 52px;
+        height: 50px;
+
+    }
+    
+    .entrar {
+        height: 40px;
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .navbar-login {
+        height: 80px !important;
+        padding: 0 15px 0 15px;
+    }
+
+    .navbar-login img {
+        width: 175px;
+        height: auto;
+    }
+
+    .intro {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .login-box {
+        width: 80%;
+        height: 480px;
+        padding: 15px;   
+        transform: translateX(13%);
+        margin-bottom: 50px;    
+    }
+    
+    .info-login {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    
+    .info-login h3{
+        font-weight:400;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+
+    .form-box form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .form-box input {
+        width: 100%;
+        min-width: 40px;
+        height: 50px;
+        margin-bottom: 5px;  
+    }
+    
+    
+    .input-group{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    
+
+    .inputWithIcon{
+        width: 100%;
+    }
+
+
+    .inputWithIcon i{
+        top: 16px;
+    }
+
+   .input-group input{
+        width: 100%;
+    }
+
+    .input-group button{
+       margin: 0;
+    }
+
+
+    .entrar {
+        height: 40px;
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+    
+}

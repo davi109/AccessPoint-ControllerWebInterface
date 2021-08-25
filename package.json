@@ -1,0 +1,50 @@
+{
+  "name": "web_controller",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "crypto-js": "^4.0.0",
+    "file-saver": "^2.0.5",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.1",
+    "react-datepicker": "^3.8.0",
+    "react-dom": "^16.14.0",
+    "react-icons": "^3.11.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-spinkit": "^3.0.0",
+    "react-tooltip": "^4.2.13",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts --max_old_space_size=4096 build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px Roboto, sans-serif;
+    background: #ffff !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea{
+    font: 400 18px Roboto, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid #5f50b8;
+    background: #5a49bd;
+}
+
+button:hover {
+  box-shadow: 0 2px 4px 1px #756f99;
+}
+
+.navbar {
+    width: 100%;
+    height: 110px;
+    background: #64ce76;
+    display: flex;
+    flex-wrap: unset !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px 17px 35px !important;   
+}
+
+.navbar img{
+  width: 180px;
+  padding-top: 30px;  
+}
+
+.userIcon,
+.menuIcon {
+    font-size: 45px;
+    color:#f5f5f5;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.userIcon:hover,
+.menuIcon:hover {
+    color: #5a49bd;
+}
+
+.box-menu-lateral{
+    width: 33%;
+    max-width: 400px;
+    height: 100%;
+    background: #FBF8F8;
+    position: fixed;
+    top: 0;
+    margin-left: -200%;
+    z-index: 4000;
+    padding: 0px 15px 0px 15px;
+    transition: 0.5s;
+    box-shadow: 2px 5px 7px 0px rgb(0, 0, 0);
+
+  }
+
+  .box-menu-user{
+    width: 33%;
+    max-width: 400px;
+    height: 100%;
+    background: #FBF8F8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: -200%;
+    z-index: 4000;
+    padding: 0px 15px 0px 15px;
+    box-shadow: 15px 15px 14px 15px rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+  
+  .back-icon {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+  }
+
+  .back-icon-user {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .back-icon i,
+  .back-icon-user i{
+    font-size: 45px;
+    color: #9f9a9a;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .back-icon:hover i {
+    color: #64ce76;
+  }
+  
+  .sidemenu-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .sidemenu-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-left: 4px solid #9f9a9a;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    }
+  
+  .sidemenu-item:hover {
+    border-left: 4px solid #64ce76;
+  }
+ 
+  .sidemenu-item h3 {
+    font-size: 20px;
+    color: #9f9a9a;
+    transition: 0.1s;
+  }
+  
+  .sidemenu-item:hover h3 {
+    font-size: 22px;
+    color: #64ce76;
+  }
+  
+  
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: 80px !important;
+        padding: 0 15px 0 15px;
+    }
+
+    .navbar img {
+        width: 100px !important;
+    }
+
+    .userIcon,
+    .menuIcon {
+        font-size: 32px;  
+    }
+
+    .box-menu-lateral {
+        width: 100%;
+        max-width: none;
+        overflow: auto;
+    }
+
+    .box-menu-user {
+      width: 100%;
+      max-width: none;
+    }
+
+}
+
