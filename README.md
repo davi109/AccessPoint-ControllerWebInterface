@@ -41,7 +41,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Links importantes
 
-- [Servidor Contralador](https://github.com/davi109/AccessPoint-Controller)
+- [Servidor Controlador](https://github.com/davi109/AccessPoint-Controller)
 - [Scripts para os pontos de acesso](https://github.com/davi109/AccessPoint-Scripts)
 
 
