@@ -1,5 +1,13 @@
 # AccessPoint-ControllerWebInterface
 Este repositório contém os arquivos relacionados a interface web do servidor controlador de pontos de acesso (roteadores wireless)
+
+### O projeto
+
+Este projeto tem como objetivo possibilitar a implementação de uma rede wireless gerenciável de grande porte ou pequeno porte, que seja compátivel com diversos pontos de acesso e atenda aos seguintes requisítos:
+
+ - Flexibilidade
+ - Escalabilidade
+ - Baixo custo de implementação
  
 <h2 align="center">Procedimentos para instalação</h2>
 
