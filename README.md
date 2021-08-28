@@ -54,6 +54,11 @@ $ npm start
 # O servidor inciará na porta:3000 - acesse <http://localhost:3333>
 ```
 
+Usuário para primeiro acesso:
+login: admin
+senha: 12345678
+
+
 ### 🛠 Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
