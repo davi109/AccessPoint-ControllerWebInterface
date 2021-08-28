@@ -18,6 +18,8 @@ export const isAdmin= async () => {
         const res = await api.get('verifica_login');
         if (res.data.user.user_permission === 0) {
             return true;
+        }else{
+            return false
         }
     } catch (error) {
         return false;

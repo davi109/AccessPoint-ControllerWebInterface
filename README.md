@@ -22,14 +22,28 @@ Link para instalação caso ainda não tenha: https://nodejs.org/en/download/pac
 
 <h3 align="left">3 - Instalação e configuração da interface web</h3>
 
-Acesso o terminal/cmd da máquina e execute os seguintes comandos:
+Acesse o terminal/cmd da máquina e execute os seguintes comandos:
 
 ```bash
 # Clone este repositório
 git clone https://github.com/davi109/AccessPoint-ControllerWebInterface.git
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd AccessPoint-ControllerWebInterface
+# Acesse a pasta src do projeto
+$ cd src
+```
+Edite o arquivo config.json e informe corretamente o ip do servidor controlador conforme o modelo abaixo:
+
+```json
+{
+    "api_host" : "192.168.1.1"
+}
+```
+
+Logo após, execute os seguintes comandos
+
+```bash
+# Volte para pasta raiz do projeto no terminal/cmd
+$ cd ../
 
 # Instale as dependências
 $ npm install

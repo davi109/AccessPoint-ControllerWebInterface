@@ -1,10 +1,12 @@
 import axios from 'axios'
 import { getToken } from './auth'
+import config from '../config.json'
 
 const api = axios.create();
 
-//var host = '140.238.237.209'
-var host = '127.0.0.1'
+console.log(process.env.DB_HOST)
+
+var host = config.api_host
 
 api.defaults.baseURL = 'http://'+host+':3333/api/v1/'
 

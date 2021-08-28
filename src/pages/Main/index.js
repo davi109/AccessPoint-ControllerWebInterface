@@ -501,7 +501,7 @@ function CadastrarAP(props) {
 
 			<Modal.Body>
 				<Loading loading={carregando} message='Carregando...' />
-				<div className='modal-box'>
+				<div>
 					<div className='modal1-items'>
 						<div className="modal-item1">
 							<label>MAC</label>
@@ -717,7 +717,7 @@ function ChangeMany(props) {
 
 			<Modal.Body>
 				<Loading loading={carregando} message='Carregando...' />
-				<div className='modal-box'>
+				<div>
 					<div className='modal1-items'>
 						<div style={{width:'100%'}}>
 							<label>Grupo</label>

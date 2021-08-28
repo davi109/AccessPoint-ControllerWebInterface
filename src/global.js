@@ -11,7 +11,7 @@ import logoImg from './assets/logo.png';
 
 export function Menu() {
 
-	const { handleLogout, Authenticated } = useContext(Context);
+	const { handleLogout, Authenticated, Admin } = useContext(Context);
 
 	const history = useHistory();
 
@@ -62,11 +62,13 @@ export function Menu() {
 						</div>
 					</Link>
 
+					{Admin?
 					<Link style={{textDecoration:"none"}} disabled={!Authenticated} to="/users">
 						<div className="sidemenu-item">
 							<h3>Usuários</h3>
 						</div>
 					</Link>
+					:null}
 
 				</div>
 

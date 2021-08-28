@@ -284,6 +284,10 @@ function CadastrarGrupo(props) {
 					setCarregando(true)
 					setTypeP2('default')
 					setChannelMode2('auto')
+					setDesc("")
+					setSsid2("")
+					setPassword2("")
+					setWpa2S2("")
 
 					var grupo = sessionStorage.getItem('GroupId')
 					console.log(grupo)
@@ -385,12 +389,13 @@ function CadastrarGrupo(props) {
 
 				aviso("success", "Grupo atualizado com sucesso")
 
+				setTypeP2('default')
+				setChannelMode2('auto')
 				setDesc("")
 				setSsid2("")
-				setTypeP2("")
 				setPassword2("")
 				setWpa2S2("")
-				setChannelMode2("")
+				
 				props.onHide()
 
 			} catch (error) {
@@ -421,8 +426,8 @@ function CadastrarGrupo(props) {
 
 			<Modal.Body>
 				<Loading loading={carregando} message='Carregando...' />
-				<div className='modal-box'>
-
+				<div>
+					
 					<div className='modal1-items'>
 
 						<div className="modal1-item2">
