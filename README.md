@@ -35,7 +35,8 @@ Edite o arquivo config.json e informe corretamente o ip do servidor controlador 
 
 ```json
 {
-    "api_host" : "192.168.1.1"
+    "api_host" : "192.168.1.1",
+    "api_port" : "3333"
 }
 ```
 
