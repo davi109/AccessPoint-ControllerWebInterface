@@ -134,17 +134,17 @@ export default function GerenciarAps() {
 		setCarregando(true)
 		try {
 
-			await api.get('ap').then(response => {
-				setAp(response.data.resultado)
-			})
-
-			await api.get('group').then(response => {
+			await Promise.all([
+				api.get('ap'),
+				api.get('group')
+			]).then(response => {
 				var aux = []
 				aux.push({ id: -1, description: "Todos" })
-				response.data.resultado.forEach(item => {
+				response[1].data.resultado.forEach(item => {
 					aux.push(item)
 				})
 				setOptionsSearch(aux)
+				setAp(response[0].data.resultado)
 			})
 
 		} catch (error) {
@@ -266,6 +266,7 @@ export default function GerenciarAps() {
 												<a>Modo de seleção: {ap.channel_mode}</a>
 											</div>
 											<div className="ap-item-1">
+												{console.log(optionsSearch)}
 												<a>Grupo: {ap.fk_group_id == null ? "Nenhum" : optionsSearch.filter(item => item.id == ap.fk_group_id)[0].description}</a>
 												<a>Clientes conectados: {ap.n_connected_clients}</a>
 											</div>

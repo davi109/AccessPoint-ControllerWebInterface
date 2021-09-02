@@ -117,7 +117,7 @@ export default function Logger() {
 			if(filter2 == 'Todos'){
 				filteredType2 = filteredType
 			}else{
-				filteredType2  = filteredData.filter(item => item.action == filter2)
+				filteredType2  = filteredType.filter(item => item.action == filter2)
 			}
 
 			console.log(filteredType2)
