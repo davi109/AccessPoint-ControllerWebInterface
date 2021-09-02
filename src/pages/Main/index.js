@@ -291,7 +291,7 @@ export default function GerenciarAps() {
 
 						</InfiniteScroll>
 					</div>
-					Total: {totalAp}
+					Total: {foundAp.length}
 				</div>
 
 				<Loading loading={carregando} message='Carregando...' />

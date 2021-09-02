@@ -7,6 +7,7 @@ import Clients from './pages/Clients'
 import Groups from './pages/Groups';
 import Perfil from './pages/Dados';
 import Users from './pages/Users';
+import Logs from './pages/Logger';
 
 
 import { Context } from './Context/AuthContext';
@@ -54,6 +55,7 @@ export default function Routes() {
         <CustomRoute isPrivate path="/groups" component={Groups} />
         <CustomRoute isPrivate path="/perfil" component={Perfil} />
         <CustomRoute isAdmin path="/users" component={Users} />
+        <CustomRoute isAdmin path="/logs" component={Logs} />
 
       </Switch>
     </BrowserRouter>

@@ -236,7 +236,7 @@ export default function GerenciarUsuarios() {
 
 						</InfiniteScroll>
 					</div>
-					Total: {totalUsers}
+					Total: {foundUsers.length}
 				</div>
 
 				<Loading loading={carregando} message='Carregando...' />

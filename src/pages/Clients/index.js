@@ -249,7 +249,7 @@ export default function GerenciarClientes() {
 
 						</InfiniteScroll>
 					</div>
-					Total: {totalCC}
+					Total: {foundCC.length}
 				</div>
 
 				<Loading loading={carregando} message='Carregando...' />

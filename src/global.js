@@ -69,6 +69,13 @@ export function Menu() {
 						</div>
 					</Link>
 					:null}
+					{Admin?
+					<Link style={{textDecoration:"none"}} disabled={!Authenticated} to="/logs">
+						<div className="sidemenu-item">
+							<h3>Logs</h3>
+						</div>
+					</Link>
+					:null}
 
 				</div>
 

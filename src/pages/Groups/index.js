@@ -250,7 +250,7 @@ export default function GerenciarGrupo() {
 
 						</InfiniteScroll>
 					</div>
-					Total: {totalG}
+					Total: {foundG.length}
 				</div>
 
 				<Loading loading={carregando} message='Carregando...' />
