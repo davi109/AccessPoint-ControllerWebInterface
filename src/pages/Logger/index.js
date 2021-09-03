@@ -168,9 +168,13 @@ export default function Logger() {
 
 			await api.get('log').then(response => {
 				var logs = []
+				console.log(response.data.resultado)
 				response.data.resultado.forEach(item => {
-					logs.push(JSON.parse(item))
+					try{
+						logs.push(JSON.parse(item))
+					}catch(error){}
 				})
+
 				setLogs(logs)
 			})
 
