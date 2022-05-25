@@ -279,7 +279,12 @@ export default function GerenciarAps() {
 														if (r === true)
 															handleDeleteAp(ap.id)
 													}} /></i>
-												<i><MdRefresh data-tip="Reiniciar AP" data-for={toString(ap.id)} className='ap-reset' onClick={() => handleApReboot(ap.id)} /></i>
+												<i><MdRefresh data-tip="Reiniciar AP" data-for={toString(ap.id)} className='ap-reset' 
+												onClick={() => {
+													const r = window.confirm('Tem certeza que deseja reiniciar esse AP?')
+													if (r === true)
+														handleApReboot(ap.id)
+												}} /></i>
 											</div>
 										</div>
 										<div className="ap-item-II">
