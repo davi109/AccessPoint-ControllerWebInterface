@@ -224,7 +224,7 @@ export default function GerenciarGrupo() {
 												<a>SSID: {group.ssid}</a>
 											</div>
 											<div className="group-item-2">
-												<a>Tipo de Criptografia: {group.type_password}</a>
+												<a>Tipo de Criptografia: {group.type_password === 'wpa2'? 'WPA2-Enterprise' : 'WPA2-PSK'}</a>
 												<a>Modo de seleção de canal: {group.channel_mode}</a>
 											</div>
 
@@ -441,8 +441,8 @@ function CadastrarGrupo(props) {
 						<div className='modal1-item2'>
 							<label>Tipo de Criptografia</label>
 							<select className="ap-select" value={typeP2} onChange={e => setTypeP2(e.target.value)}>
-								<option value={"default"}>Default</option>
-								<option value={"wpa2"}>WPA2</option>
+								<option value={"default"}>WPA2-PSK</option>
+								<option value={"wpa2"}>WPA2-Enterprise</option>
 							</select>
 						</div>
 

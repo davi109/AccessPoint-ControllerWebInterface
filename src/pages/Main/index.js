@@ -259,7 +259,7 @@ export default function GerenciarAps() {
 											</div>
 											<div className="ap-item-1">
 												<a>SSID: {ap.ssid}</a>
-												<a>Criptografia: {ap.type_password}</a>
+												<a>Criptografia: {ap.type_password === 'wpa2'? 'WPA2-Enterprise' : 'WPA2-PSK'}</a>
 											</div>
 											<div className="ap-item-2">
 												<a>Canal: {ap.channel}</a>
@@ -531,8 +531,8 @@ function CadastrarAP(props) {
 							<div className='modal2-item2'>
 								<label>Tipo de Criptografia</label>
 								<select className="ap-select" value={typeP2} onChange={e => setTypeP2(e.target.value)}>
-									<option value={"default"}>Default</option>
-									<option value={"wpa2"}>WPA2</option>
+									<option value={"default"}>WPA2-PSK</option>
+									<option value={"wpa2"}>WPA2-Enterprise</option>
 								</select>
 							</div>
 							<div className='modal2-item3'>
