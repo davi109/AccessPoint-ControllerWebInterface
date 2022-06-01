@@ -688,10 +688,10 @@ function ChangeMany(props) {
 
 
 				setSsid3("")
-				setTypeP3("")
+				setTypeP3('default')
 				setPassword3("")
 				setWpa2S3("")
-				setChannelMode3("")
+				setChannelMode3('auto')
 				setGroup3("")
 				props.onHide()
 
