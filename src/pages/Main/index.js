@@ -382,10 +382,10 @@ function CadastrarAP(props) {
 		if (e.target.value == -1) {
 			setGroup2(e.target.value)
 			setSsid2("")
-			setTypeP2("")
+			setTypeP2('default')
 			setPassword2("")
 			setWpa2S2("")
-			setChannelMode2("")
+			setChannelMode2('auto')
 		} else {
 			var g = optionsSearch2.filter(item => item.id == e.target.value)[0]
 			setSsid2(g.ssid)
@@ -473,10 +473,10 @@ function CadastrarAP(props) {
 				setMac2("")
 				setDesc2("")
 				setSsid2("")
-				setTypeP2("")
+				setTypeP2('default')
 				setPassword2("")
 				setWpa2S2("")
-				setChannelMode2("")
+				setChannelMode2('auto')
 				setGroup2(-1)
 				props.onHide()
 			} catch (error) {
